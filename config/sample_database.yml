@@ -1,0 +1,11 @@
+development:
+  adapter: postgresql
+  database: bookstore_dev
+  username: user
+  password: pass
+
+test:
+  adapter: postgresql
+  database: bookstore_test
+  username: user
+  password: pass
