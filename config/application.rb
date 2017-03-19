@@ -24,5 +24,6 @@ module Bookstore
     config.sequel.after_connect = proc do
       Sequel::Model.plugin :timestamps
     end
+    config.active_job.queue_adapter = :sneakers
   end
 end

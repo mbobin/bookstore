@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require File.expand_path(File.join(File.dirname(__FILE__), '..', 'config', 'environment'))
+
+listener = Listen.to("public/tmp/books") do |added|
+  ProcessFileJob.perform_later(added)
+end
+listener.start
+sleep

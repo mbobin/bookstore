@@ -18,6 +18,9 @@ gem "coffee-rails", "~> 4.2"
 gem "jquery-rails"
 gem "turbolinks", "~> 5"
 
+gem "listen", "~> 3.0.5"
+gem "sneakers"
+
 group :development, :test do
   gem "byebug", platform: :mri
   gem "rspec-rails", "~> 3.5"
@@ -38,7 +41,6 @@ group :development do
   gem "better_errors"
   gem "binding_of_caller"
   gem "web-console", ">= 3.3.0"
-  gem "listen", "~> 3.0.5"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
 end
