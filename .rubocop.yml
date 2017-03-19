@@ -12,6 +12,7 @@ AllCops:
     - 'config/boot.rb'
     - 'config.ru'
     - 'Rakefile'
+    - 'db/schema.rb'
 
 # Prefer &&/|| over and/or.
 Style/AndOr:
