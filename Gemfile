@@ -20,6 +20,11 @@ gem "turbolinks", "~> 5"
 
 gem "listen", "~> 3.0.5"
 gem "sneakers"
+gem "rubyzip", "~> 1.2", ">= 1.2.1"
+gem "trailblazer"
+gem "trailblazer-rails"
+gem "henkei"
+gem "isbn_extractor", github: "mbobin/isbn_extractor"
 
 group :development, :test do
   gem "byebug", platform: :mri
