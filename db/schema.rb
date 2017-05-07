@@ -16,6 +16,8 @@ Sequel.migration do
       foreign_key :author_id, :authors, :key=>[:id]
       column :name, "text"
       column :publisher, "text"
+      
+      index [:author_id]
     end
     
     create_table(:versions) do
@@ -26,6 +28,7 @@ Sequel.migration do
       column :sha_hash, "text"
       
       index [:book_id]
+      index [:sha_hash], :unique=>true
     end
   end
 end
